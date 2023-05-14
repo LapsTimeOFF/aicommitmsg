@@ -1,0 +1,24 @@
+{
+  "name": "aicommitmsg",
+  "version": "0.0.0",
+  "license": "GPL-3.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "author": "LapsTime",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --minify --dts",
+    "lint": "tsc"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "eslint": "^8.40.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  }
+}
