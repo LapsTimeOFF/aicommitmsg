@@ -1,6 +1,7 @@
 {
   "name": "aicommitmsg",
   "version": "0.0.0",
+  "description": "Tired of committing with \"WIP\" as msg? Let AI do it for you!",
   "license": "GPL-3.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -12,6 +13,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
+    "@types/node": "^20.2.4",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "eslint": "^8.40.0",
     "eslint-config-standard-with-typescript": "^34.0.1",
@@ -20,5 +22,14 @@
     "eslint-plugin-promise": "^6.0.0",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "commander": "^10.0.1",
+    "fs": "0.0.1-security",
+    "nanospinner": "^1.1.0",
+    "openai": "^3.2.1",
+    "os": "^0.1.2",
+    "path": "^0.12.7"
   }
 }
