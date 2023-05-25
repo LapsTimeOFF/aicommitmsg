@@ -9,7 +9,8 @@
   "author": "LapsTime",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --minify --dts",
-    "lint": "tsc"
+    "lint": "tsc",
+    "release": "pnpm run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
